@@ -51,7 +51,18 @@ input/output format. For required fields and shapes, just follow the `WebSocket 
 export POLICY_CHECKPOINT_PATH=/abs/path/to/checkpoint_dir
 ```
 
-## 5. Sample Openpi Variables
+## 5. Team 06 — Pi0.5 Base Model (no fine-tuning)
+
+Checkpoint: pi0.5 base model (JAX/orbax format) uploaded to Cloudflare R2 (`s3://airoa-icra-team-06/checkpoint/`).
+
+```bash
+export POLICY_CHECKPOINT_PATH=/abs/path/to/downloaded/checkpoint
+export POLICY_CONFIG_NAME=pi05_hsr
+```
+
+Branch: `feat/pi05-base-submission`
+
+### Sample Openpi Variables (for reference)
 ```bash
 export POLICY_CHECKPOINT_PATH=/abs/path/to/pi05_hsr_task6891011_level12_v2.5_train_adaptive/pi05_hsr_task6891011_level12_v2.5_train_adaptive_gpu8/200000/
 export POLICY_CONFIG_NAME=pi05_hsr_task6891011_level12_v2.5_train_adaptive
