@@ -1087,6 +1087,9 @@ _CONFIGS = [
         ),
         data=LeRobotHSRDataConfig(
             repo_id="processed/2025-05-06-07-v3.1-success-only",
+            assets=AssetsConfig(
+                asset_id="trossen",
+            ),
             base_config=DataConfig(
                 prompt_from_task=True,
             ),
